@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido - Sabor y Tradición</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="order.html">Realizar Pedido</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Realizar Pedido</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Pedido</h2>
+            <form action="/submit_order" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Fecha del evento:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="product">Tipo de producto:</label>
+                <select id="product" name="product" required>
+                    <option value="pan">Pan</option>
+                    <option value="pastel">Pastel</option>
+                </select>
+                <label for="details">Detalles de diseño o sabor:</label>
+                <textarea id="details" name="details"></textarea>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <label for="contact">Contacto:</label>
+                <input type="text" id="contact" name="contact" required>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sabor y Tradición. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
